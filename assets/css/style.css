@@ -1,0 +1,170 @@
+/* Assurer que chaque section reste distincte */
+section {
+    margin-bottom: 50px; /* Ajoute une marge entre les sections */
+}
+/* section a propos de moi  */
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #212529; /* Couleur de fond claire */
+    color: #d3d3d3; /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    }
+
+/* Section générale */
+.about {
+    background-color: #212529; /* Fond blanc pour la section */
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Titres des catégories */
+.about h2 {
+    color: #dc3545; /* Rouge pour le titre principal */
+}
+
+.about h3 {
+    color: #007bff; /* Bleu pour les sous-titres */
+}
+
+/* A propos*/
+
+
+/* mes competences */
+#competences ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#competences ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+#competences ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #dc3545; /* Rouge pour les puces */
+}
+
+
+/* mes projets */
+
+#projets img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 0; /* Évite les marges inutiles entre les cartes */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuster la hauteur des carrousels */
+.carousel-inner img {
+    height: 200px; /* Hauteur uniforme pour les images des carrousels */
+    object-fit: cover; /* Évite les débordements d'image */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.card-text {
+    color: #d3d3d3;
+}
+
+.carousel {
+    overflow: hidden; /* Empêche les débordements */
+    border-radius: 8px; /* Arrondi les bords pour plus d'esthétique */
+}
+
+
+
+/* Mon parcours */
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    border-left: 3px solid #dc3545; /* Ligne verticale rouge */
+    margin-left: 30px; /* Décalage par rapport au bord */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 50px; /* Espace pour aligner les points rouges */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 10px; /* Ajustement vertical */
+    left: -30px; /* Positionnement à gauche de la ligne */
+    width: 15px;
+    height: 15px;
+    background-color: #dc3545; /* Point rouge */
+    border-radius: 50%;
+    border: 3px solid #121212; /* Fond noir pour se fondre au design */
+    box-shadow: 0 0 0 3px #dc3545; /* Cercle rouge autour */
+}
+
+.timeline-content h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; /* Blanc pour le titre */
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #d3d3d3; /* Texte gris clair */
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+/* fin */
+#cta {
+    background: linear-gradient(to right, #dc3545, #c82333);
+    margin-top: 50px;
+    margin-bottom: 0; /* Supprime les marges externes */
+    padding: 30px 0; /* Réduit l'espacement interne */
+    background: linear-gradient(to bottom, #dc3545, #a71d2a); /* Garder un effet visuel */
+    color: #fff;
+    text-align: center;
+    }
+
+#cta a {
+    transition: transform 0.3s ease;
+}
+
+#cta a:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 0; /* Supprime les marges au-dessus */
+    padding: 10px 0; /* Réduit l'espacement interne */
+    text-align: center;
+    }
