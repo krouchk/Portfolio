@@ -1,133 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BTS SIO - Portfolio Kellyann</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>BTS SIO - Présentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/btssio.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-      .typing-effect {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #ffffff;
-        text-align: center;
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 2px solid white;
-        width: 0;
-        animation: typing 3s steps(30, end) forwards, blink 0.7s infinite;
-      }
-      @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-      }
-      @keyframes blink {
-        50% { border-color: transparent; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="particles-js"></div>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Kellyann K.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      BTS SIO
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Stage 1ère année</a></li>
-                      <li><a class="dropdown-item" href="#">Stage 2ème année</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Atelier Pro</a></li>
-                    </ul>
-                  </li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      <a class="navbar-brand" href="#">Kellyann K.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Veille technologique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projets</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BTS SIO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="btssio.html">Qu'est-ce que le BTS SIO</a></li>
+              <li><a class="dropdown-item" href="stage1.html">Stage 1ère année</a></li>
+              <li><a class="dropdown-item" href="stage2.html">Stage 2ème année</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">TP/Atelier Pro</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<section id="bts-sio" class="py-5 bg-secondary text-white">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Présentation du BTS SIO</h2>
+
+        <!-- Introduction au BTS SIO -->
+        <div class="intro text-center mb-5" data-aos="fade-up">
+            <p>Le BTS Services Informatiques aux Organisations (BTS SIO) est une formation en deux ans qui forme des spécialistes en informatique capables de développer, sécuriser et maintenir des infrastructures numériques pour les entreprises.</p>
+            <p>Il existe deux spécialités dans ce BTS :</p>
+            <ul class="list-unstyled">
+                <li>💻 Option SLAM (Solutions Logicielles et Applications Métiers) : spécialisation en développement d’applications.</li>
+                <li>🌐 Option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) : spécialisation en administration des réseaux et cybersécurité.</li>
             </ul>
         </div>
-    </div>
-</nav>
 
-<section id="bts-sio" class="py-5 bg-secondary text-white position-relative">
-  <div class="container">
-      <h2 class="text-center fw-bold mb-5 typing-effect">Qu'est-ce que le BTS SIO ?</h2>
-      
-      <div class="row align-items-center">
-          <div class="col-md-6" data-aos="fade-right">
-              <p>
-                  Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> est un diplôme de niveau Bac+2 qui forme des spécialistes en informatique capables de répondre aux besoins des entreprises en matière de développement et de gestion de systèmes d'information.
-              </p>
-              <p>
-                  Ce BTS propose <strong>deux options</strong> :
-              </p>
-              <ul>
-                  <li><strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) : orienté vers le développement, la programmation et la gestion de bases de données.</li>
-                  <li><strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux) : centré sur l'administration des réseaux et la sécurité informatique.</li>
-              </ul>
-          </div>
-          <div class="col-md-6 text-center" data-aos="fade-left">
-              <img src="assets/images/bts-sio.svg" alt="BTS SIO" class="img-fluid" width="80%">
-          </div>
-      </div>
-      
-      <div class="row mt-5 text-center">
-          <div class="col-md-4" data-aos="zoom-in">
-              <i class="fas fa-code fa-3x text-info"></i>
-              <h4 class="mt-3">Développement</h4>
-              <p>Maîtriser les langages de programmation et concevoir des applications performantes.</p>
-          </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-              <i class="fas fa-network-wired fa-3x text-primary"></i>
-              <h4 class="mt-3">Réseaux & Sécurité</h4>
-              <p>Configurer et administrer des infrastructures réseau sécurisées.</p>
-          </div>
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-              <i class="fas fa-briefcase fa-3x text-success"></i>
-              <h4 class="mt-3">Opportunités</h4>
-              <p>Accéder rapidement au marché du travail ou poursuivre ses études.</p>
-          </div>
-      </div>
-  </div>
+        <!-- Tableau des matières -->
+        <h3 class="text-center fw-bold" data-aos="fade-up">Les matières du BTS SIO</h3>
+        <div class="table-responsive" data-aos="fade-up">
+            <table class="table table-dark table-hover text-center align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Matière 📚</th>
+                        <th scope="col">Durée ⏳</th>
+                        <th scope="col">Coefficient 📊</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Culture générale et expression</td>
+                        <td>4h/semaine</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Anglais</td>
+                        <td>2h/semaine</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Mathématiques</td>
+                        <td>2h/semaine</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Économie, Droit, Management</td>
+                        <td>4h/semaine</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Cybersécurité des services informatiques</td>
+                        <td>2h/semaine</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Analyse et Conception des SI (SLAM) / Administration Réseaux (SISR)</td>
+                        <td>8h/semaine</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Développement et Programmation (SLAM) / Infrastructure et Sécurité (SISR)</td>
+                        <td>6h/semaine</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Débouchés et poursuite d’études -->
+        <h3 class="text-center fw-bold mt-5" data-aos="fade-up">Que faire après un BTS SIO ?</h3>
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-6">
+                <h4>🎯 Débouchés professionnels</h4>
+                <ul>
+                    <li>Développeur web / mobile</li>
+                    <li>Administrateur systèmes et réseaux</li>
+                    <li>Technicien support / hotline</li>
+                    <li>Consultant en cybersécurité</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>🎓 Poursuite d’études</h4>
+                <ul>
+                    <li>Licence Pro en Informatique</li>
+                    <li>Bachelor Développement Web</li>
+                    <li>École d’ingénieur en informatique</li>
+                    <li>Mastère en cybersécurité</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pourquoi choisir le BTS SIO ? -->
+        <h3 class="text-center fw-bold mt-5" data-aos="fade-up">Pourquoi choisir le BTS SIO ?</h3>
+        <p class="text-center" data-aos="fade-up">Le BTS SIO offre une formation complète, professionnalisante et très demandée dans le secteur du numérique. Il permet une insertion rapide sur le marché du travail tout en offrant la possibilité de poursuivre ses études.</p>
+    </div>
 </section>
 
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 80 },
-      "size": { "value": 3 },
-      "move": { "speed": 2 }
-    },
-    "interactivity": {
-      "events": { "onhover": { "enable": true, "mode": "repulse" } }
-    }
-  });
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  </body>
+<script src="assets/js/btssio.js"></script>
+
+</body>
 </html>
