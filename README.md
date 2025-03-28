@@ -8,4 +8,4 @@ Ce site présente mes projets, compétences, et informations de contact.
 - JavaScript
 
 ## Lien du site
-[Visiter mon portfolio](https://krouchk.github.io/Portfolio/)
+[Visiter mon portfolio](https://kellyann-portfolio.netlify.app/veilletech)
