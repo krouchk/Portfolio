@@ -1,88 +1,94 @@
-
 section {
-    margin-bottom: 50px; 
+  margin-bottom: 50px;
+  padding: 60px 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 123, 255, 0.2));
+}
+
+.section-block {
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.section-block:hover {
+  border-color: rgba(0, 123, 255, 0.6);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #212529; 
-    color: #d3d3d3; /* Couleur du texte */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les paddings par défaut */
-    }
+  font-family: 'Arial', sans-serif;
+  background-color: #212529;
+  color: #d3d3d3;
+  /* Couleur du texte */
+  margin: 0;
+  /* Supprime les marges par défaut */
+  padding: 0;
+  /* Supprime les paddings par défaut */
+}
 
-  
-  h2, h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  p, ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  /* Conteneur principal */
-  .container {
-    max-width: 1100px;
-    margin: auto;
-  }
-  
-  /* Sections */
-  section {
-    padding: 60px 0;
-  }
-  
-  /* Mise en forme des listes */
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    padding: 8px 0;
-    position: relative;
-    padding-left: 30px;
-  }
-  
-  ul li::before {
-    content: "✔️";
-    position: absolute;
-    left: 0;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  /* Animation d'apparition */
-  [data-aos] {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  [data-aos].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Effet sur les titres */
-  h3 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  /* Effet de hover sur les sections */
-  section:hover {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 123, 255, 0.2));
-    transition: background 0.5s ease-in-out;
-  }
-  
-  /* Style des paragraphes */
-  p {
-    color: #ccc;
-    margin-bottom: 15px;
-  }
-  
+
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p,
+ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Mise en forme des listes */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0;
+  position: relative;
+}
+
+ul li::before {
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Animation d'apparition */
+[data-aos] {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: transform 0.8s ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Effet sur les titres */
+h3 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style des paragraphes */
+p {
+  color: #ccc;
+  margin-bottom: 15px;
+}

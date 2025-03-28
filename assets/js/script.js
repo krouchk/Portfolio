@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.getElementById("typing-text").style.borderRight = "none";
-    }, 3000); 
+    }, 3000);
 });
 
 /* defilement */

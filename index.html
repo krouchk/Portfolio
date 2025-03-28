@@ -1,334 +1,368 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Kellyann Krouch</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yellowtail&display=swap"
+        rel="stylesheet">
     <script src="assets/js/stars.js" defer></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Kellyann K.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="veilletech.html">Veille technologique</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projets</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  BTS SIO
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="btssio.html">Qu'est-ce que le BTS SIO</a></li>
-                  <li><a class="dropdown-item" href="stage1.html">Stage 1ère année</a></li>
-                  <li><a class="dropdown-item" href="stage2.html">Stage 2ème année</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="tp_atelier.html">TP/Atelier Pro</a></li>
+            <a class="navbar-brand" href="#">Kellyann K.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veilletech.html">Veille technologique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projets</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" on="handleKeyDown(event)">
+                            BTS SIO
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="btssio.html">Qu'est-ce que le BTS SIO</a></li>
+                            <li><a class="dropdown-item" href="stage1.html">Stage 1ère année</a></li>
+                            <li><a class="dropdown-item" href="stage2.html">Stage 2ème année</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="tp_atelier.html">TP/Atelier Pro</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true"></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <canvas id="starsCanvas"></canvas>
+    <canvas id="starsCanvas"></canvas>
 
-<section class="home py-5" id="home">
-  <div class="container-lg">
-      <div class="row min-vh-100 align-items-center align-content-center">
-          <!-- Image de profil -->
-          <div class="col-md-6">
-              <div class="home-img">
-                  <img src="img/profil.jpg" class="rounded-circle mw-100 shadow" alt="Photo de Kellyann Krouch">
-              </div>
-          </div>
-          <!-- Texte de présentation -->
-          <div class="col-md-6 order-md-first">
-              <div class="home-text">
-                  <p class="text-muted mb-1">Bonjour, je suis</p>
-                  <h1 id="typing-text">Kellyann KROUCH</h1>
-
-                  <h2>Développeuse Web & Étudiante en BTS SIO</h2>
-                  <p>
-                      Passionnée par la technologie et le développement web, je suis actuellement en deuxième année de BTS SIO, option SLAM.
-                      J’aime transformer des idées en solutions logicielles fonctionnelles et intuitives. Ce portfolio met en avant mes compétences, projets, et aspirations professionnelles.
-                  </p>
-                  <a href="assets/pdf/CV Kellyann Krouch.pdf" class="btn btn-danger px-3 mt-3 me-2">Voir mon CV</a>
-                  <a href="#projets" class="btn btn-outline-secondary px-3 mt-3">Voir mes projets</a>
-              </div>
-          </div>
-      </div>
-
-      <!-- À propos de moi -->
-      <div class="row justify-content-center mt-5">
-          <div class="col-lg-8">
-              <div class="section-title text-center">
-                  <h2 class="fw-bold mb-4">À propos de moi</h2>
-                  <p>
-                      Je suis une développeuse web curieuse et créative, toujours à la recherche de nouvelles solutions pour relever des défis techniques. 
-                      Grâce à ma formation en BTS SIO, j'ai acquis des compétences solides en programmation, gestion de projets, et résolution de problèmes.
-                  </p>
-                  <p>
-                      En dehors de mes études, j’aime explorer les nouvelles technologies, participer à des projets personnels, et apprendre de nouvelles techniques pour enrichir mes compétences. 
-                      Mon objectif est de contribuer à des projets ambitieux et de continuer à me développer professionnellement.
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!-- Section À propos de mes competences-->
-<section id="about" class="py-5">
-  <div class="container">
-      <h2 class="text-center fw-bold mb-5">Et voici mes..</h2>
-      <div class="row">
-          <!-- Compétences techniques -->
-          <div class="col-md-6 mb-4">
-              <div class="card shadow p-4">
-                  <h3 class="fw-bold mb-3">💻 Compétences techniques</h3>
-                  <ul class="list-unstyled">
-                      <li>🌐 Langages : HTML, CSS, JavaScript, Java, PHP</li>
-                      <li>📦 Frameworks & Bibliothèques : Bootstrap, React, Codeigniter</li>
-                      <li>🛠 Outils : Git, GitHub, Visual Studio Code, Eclipse</li>
-                      <li>📊 Bases de données : MySQL, MongoDB</li>
-                  </ul>
-              </div>
-          </div>
-          <!-- Qualités personnelles -->
-          <div class="col-md-6 mb-4">
-              <div class="card shadow p-4">
-                  <h3 class="fw-bold mb-3">🤝 Qualités personnelles</h3>
-                  <ul class="list-unstyled">
-                      <li>🌟 Autonomie et esprit d'initiative</li>
-                      <li>🧠 Capacité d'apprentissage rapide</li>
-                      <li>🎯 Sens du détail et de la qualité</li>
-                      <li>🤝 Travail en équipe</li>
-                  </ul>
-              </div>
-          </div>
-          <!-- Centres d'intérêt -->
-          <div class="col-md-6 mb-4">
-              <div class="card shadow p-4">
-                  <h3 class="fw-bold mb-3">🎨 Centres d'intérêt</h3>
-                  <ul class="list-unstyled">
-                      <li>🎮 Jeux vidéo</li>
-                      <li>📚 Lecture de Roman</li>
-                      <li>✈️ Voyages et découverte de cultures</li>
-                      <li>🎨 Dessin, Design graphique et créativité</li>
-                  </ul>
-              </div>
-          </div>
-          <!-- Objectifs professionnels -->
-          <div class="col-md-6 mb-4">
-              <div class="card shadow p-4">
-                  <h3 class="fw-bold mb-3">🎯 Objectifs professionnels</h3>
-                  <p>
-                      Devenir développeuse full-stack et contribuer à des projets innovants, avec un impact positif dans des secteurs comme l'éducation ou l'environnement.
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!-- Section mes projets-->
-
-<section id="projets" class="py-5 bg-secondary text-white">
-  <div class="container">
-      <h2 class="text-center fw-bold mb-5">Mes Projets</h2>
-      <div class="row g-4">
-          <!-- Projet 1 -->
-          <div class="col-md-4">
-              <div class="card bg-secondary text-white shadow">
-                  <div id="carouselProjet1" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="assets/img/projet 1/1.A.JPG" class="d-block w-100" alt="Projet 1 - Image 1">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="assets/img/projet 1/1.B.JPG" class="d-block w-100" alt="Projet 1 - Image 2">
-                          </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet1" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet1" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                      </button>
-                  </div>
-                  <div class="card-body">
-                      <h5 class="card-title">KeyAss - Site Web Événementiel</h5>
-                      <p class="card-text">Developpé en collaboration avec une camarade pour accompagner des futurs mariés dans l’organisation de leur mariage. Il propose un choix de prestations couvrant chaque aspect de l’événement : location de voiture, réservation de lieux, photographe...</p>
-                      <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
-                        <i class="devicon-html5-plain colored fa-lg"></i>
-                        <i class="devicon-css3-plain colored fa-lg"></i>
+    <section class="home py-5" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <!-- Image de profil -->
+                <div class="col-md-6">
+                    <div class="home-img">
+                        <img src="img/profil.jpg" class="rounded-circle mw-100 shadow" alt="Photo de Kellyann Krouch">
                     </div>
-                      <a href="#" class="btn btn-danger">Voir plus</a>
-                  </div>
-              </div>
-          </div>
-          <!-- Projet 2 -->
-          <div class="col-md-4">
-              <div class="card bg-secondary text-white shadow">
-                  <div id="carouselProjet2" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="assets/img/projet 2/2.A" class="d-block w-100" alt="Projet 2 - Image 1">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="assets/img/projet 2/2.B.JPG" class="d-block w-100" alt="Projet 2 - Image 2">
-                          </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet2" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet2" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                      </button>
-                  </div>
-                  <div class="card-body">
-                      <h5 class="card-title">KYAMI - Planificateur DIY</h5>
-                      <p class="card-text">Elle propose des fonctionnalités telles que : des modèles prédéfinis (anniversaire, fête surprise, garden party), des suggestions personnalisées, des to-do lists... L’objectif est d’offrir une solution intuitive et efficace pour organiser des événements sans stress</p>
-                      <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
-                        <i class="devicon-react-original colored fa-lg"></i>
-                        <i class="devicon-javascript-plain colored fa-lg"></i>
-                        <i class="devicon-html5-plain colored fa-lg"></i>
-                        <i class="devicon-css3-plain colored fa-lg"></i>
+                </div>
+                <!-- Texte de présentation -->
+                <div class="col-md-6 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Bonjour, je suis</p>
+                        <h1 id="typing-text">Kellyann KROUCH</h1>
+
+                        <h2>Développeuse Web & Étudiante en BTS SIO</h2>
+                        <p>
+                            Passionnée par la technologie et le développement web, je suis actuellement en deuxième
+                            année de BTS SIO, option SLAM.
+                            J’aime transformer des idées en solutions logicielles fonctionnelles et intuitives. Ce
+                            portfolio met en avant mes compétences, projets, et aspirations professionnelles.
+                        </p>
+                        <a href="assets/pdf/CV Kellyann Krouch.pdf" class="btn btn-danger px-3 mt-3 me-2">Voir mon
+                            CV</a>
+                        <a href="#projets" class="btn btn-outline-secondary px-3 mt-3">Voir mes projets</a>
                     </div>
-                      <a href="#" class="btn btn-danger">Voir plus</a>
-                  </div>
-              </div>
-          </div>
-          <!-- Projet 3 -->
-          <div class="col-md-4">
-              <div class="card bg-secondary text-white shadow">
-                  <div id="carouselProjet3" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="assets/img/projet 3/3.A" class="d-block w-100" alt="Projet 3 - Image 1">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="assets/img/projet 3/3.B.JPG" class="d-block w-100" alt="Projet 3 - Image 2">
-                          </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet3" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet3" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                      </button>
-                  </div>
-                  <div class="card-body">
-                      <h5 class="card-title">Overflow Testing - Site vitrine</h5>
-                      <p class="card-text">Overflow Testing est un site vitrine conçu pour mettre en avant les services et compétences d’un expert en tests logiciels. Ce projet met en avant une présentation claire et moderne des prestations, avec un formulaire de contact intégré</p>
-                      <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
-                        <i class="devicon-html5-plain colored fa-lg"></i>
-                        <i class="devicon-css3-plain colored fa-lg"></i>
-                        <i class="devicon-javascript-plain colored fa-lg"></i>
-                        <i class="devicon-php-plain colored fa-lg"></i>
-                        <i class="devicon-mysql-plain colored fa-lg"></i>
-                    </div>
-                      <a href="#" class="btn btn-danger">Voir plus</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+                </div>
+            </div>
+    </section>
 
-
-
-<!-- Mon parcours -->
-
-<!-- Section Mon parcours -->
-<section id="timeline" class="py-5">
-  <div class="container">
-      <h2 class="text-center fw-bold mb-5">Mon Parcours</h2>
-      <div class="timeline">
-          <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                  <h5>2023 - 2025</h5>
-                  <p>BTS SIO (SLAM) - en cours<br>Lycée René Descartes</p>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                  <h5>2023</h5>
-                  <p>Baccalauréat STMG - Mention Assez Bien<br>Lycée Honoré de Balzac</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section id="experience-pro">
-    <h2 class="section-title">💼 Expériences Professionnelles</h2>
-    <div class="experience-grid">
-        <div class="experience-card">
-            <h3>27/01/2025 - 21/03/2025</h3>
-            <h3>Stage chez Overflow Testing</h3>
-            <p>Développement d’un site vitrine pour un expert en tests logiciels.</p>
+    <!-- À propos de moi -->
+    <section id="apropos">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <p class="about-text">
+                Je suis une développeuse web curieuse et créative, toujours à la recherche de nouvelles solutions pour
+                relever des défis techniques.
+                Grâce à ma formation en BTS SIO, j’ai acquis des compétences solides en programmation, gestion de
+                projets, et résolution de problèmes.
+            </p>
+            <p class="about-text">
+                En dehors de mes études, j’aime explorer les nouvelles technologies, participer à des projets
+                personnels, et apprendre de nouvelles techniques pour enrichir mes compétences.
+                Mon objectif est de contribuer à des projets ambitieux et de continuer à me développer
+                professionnellement.
+            </p>
         </div>
-        <div class="experience-card">
-            <h3>06/2024</h3>
-            <h3>Stage chez Overflow testing</h3>
-            <p>Apprentissage du metier de testeur QA (test manuels, test automatisés en java)</p>
+    </section>
+
+    <!-- Section À propos de mes competences-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Et voici mes..</h2>
+            <div class="row">
+                <!-- Compétences techniques -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-4">
+                        <h3 class="fw-bold mb-3">💻 Compétences techniques</h3>
+                        <ul class="list-unstyled">
+                            <li>🌐 Langages : HTML, CSS, JavaScript, Java, PHP</li>
+                            <li>📦 Frameworks & Bibliothèques : Bootstrap, React, Codeigniter</li>
+                            <li>🛠 Outils : Git, GitHub, Visual Studio Code, Eclipse</li>
+                            <li>📊 Bases de données : MySQL, MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Qualités personnelles -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-4">
+                        <h3 class="fw-bold mb-3">🤝 Qualités personnelles</h3>
+                        <ul class="list-unstyled">
+                            <li>🌟 Autonomie et esprit d'initiative</li>
+                            <li>🧠 Capacité d'apprentissage rapide</li>
+                            <li>🎯 Sens du détail et de la qualité</li>
+                            <li>🤝 Travail en équipe</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Centres d'intérêt -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-4">
+                        <h3 class="fw-bold mb-3">🎨 Centres d'intérêt</h3>
+                        <ul class="list-unstyled">
+                            <li>🎮 Jeux vidéo</li>
+                            <li>📚 Lecture de Roman</li>
+                            <li>✈️ Voyages et découverte de cultures</li>
+                            <li>🎨 Dessin, Design graphique et créativité</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Objectifs professionnels -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow p-4">
+                        <h3 class="fw-bold mb-3">🎯 Objectifs professionnels</h3>
+                        <p>
+                            Devenir développeuse full-stack et contribuer à des projets innovants, avec un impact
+                            positif dans des secteurs comme l'éducation ou l'environnement.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Section mes projets-->
+
+    <section id="projets" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Mes Projets</h2>
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-white shadow">
+                        <div id="carouselProjet1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/projet 1/1.A.JPG" class="d-block w-100"
+                                        alt="Projet 1 - Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/projet 1/1.B.JPG" class="d-block w-100"
+                                        alt="Projet 1 - Image 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">KeyAss - Site Web Événementiel</h5>
+                            <p class="card-text">Developpé en collaboration avec une camarade pour accompagner des
+                                futurs mariés dans l’organisation de leur mariage. Il propose un choix de prestations
+                                couvrant chaque aspect de l’événement : location de voiture, réservation de lieux,
+                                photographe...</p>
+                            <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
+                                <i class="devicon-html5-plain colored fa-lg"></i>
+                                <i class="devicon-css3-plain colored fa-lg"></i>
+                            </div>
+                            <a href="#" class="btn btn-danger">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-white shadow">
+                        <div id="carouselProjet2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/projet 2/2.A" class="d-block w-100" alt="Projet 2 - Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/projet 2/2.B.JPG" class="d-block w-100"
+                                        alt="Projet 2 - Image 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">KYAMI - Planificateur DIY</h5>
+                            <p class="card-text">Elle propose des fonctionnalités telles que : des modèles prédéfinis
+                                (anniversaire, fête surprise, garden party), des suggestions personnalisées, des to-do
+                                lists... L’objectif est d’offrir une solution intuitive et efficace pour organiser des
+                                événements sans stress</p>
+                            <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
+                                <i class="devicon-react-original colored fa-lg"></i>
+                                <i class="devicon-javascript-plain colored fa-lg"></i>
+                                <i class="devicon-html5-plain colored fa-lg"></i>
+                                <i class="devicon-css3-plain colored fa-lg"></i>
+                            </div>
+                            <a href="#" class="btn btn-danger">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-white shadow">
+                        <div id="carouselProjet3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/projet 3/3.A" class="d-block w-100" alt="Projet 3 - Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/projet 3/3.B.JPG" class="d-block w-100"
+                                        alt="Projet 3 - Image 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Overflow Testing - Site vitrine</h5>
+                            <p class="card-text">Overflow Testing est un site vitrine conçu pour mettre en avant les
+                                services et compétences d’un expert en tests logiciels. Ce projet met en avant une
+                                présentation claire et moderne des prestations, avec un formulaire de contact intégré
+                            </p>
+                            <div class="tech-icons d-flex justify-content-center mt-3 gap-2">
+                                <i class="devicon-html5-plain colored fa-lg"></i>
+                                <i class="devicon-css3-plain colored fa-lg"></i>
+                                <i class="devicon-javascript-plain colored fa-lg"></i>
+                                <i class="devicon-php-plain colored fa-lg"></i>
+                                <i class="devicon-mysql-plain colored fa-lg"></i>
+                            </div>
+                            <a href="#" class="btn btn-danger">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<!--Contact-->
-      <section id="cta" class="py-5 bg-danger text-white text-center">
+
+    <!-- Mon parcours -->
+
+    <!-- Section Mon parcours -->
+    <section id="timeline" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Mon Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>2023 - 2025</h5>
+                        <p>BTS SIO (SLAM) - en cours<br>Lycée René Descartes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>2023</h5>
+                        <p>Baccalauréat STMG - Mention Assez Bien<br>Lycée Honoré de Balzac</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience-pro">
+        <h2 class="section-title">💼 Expériences Professionnelles</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>27/01/2025 - 21/03/2025</h3>
+                <h3>Stage chez Overflow Testing</h3>
+                <p>Développement d’un site vitrine pour un expert en tests logiciels.</p>
+            </div>
+            <div class="experience-card">
+                <h3>06/2024</h3>
+                <h3>Stage chez Overflow testing</h3>
+                <p>Apprentissage du metier de testeur QA (test manuels, test automatisés en java)</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contact-->
+    <section id="cta" class="py-5 bg-danger text-white text-center">
         <div class="container">
             <h2 class="fw-bold mb-3">Envie de collaborer ?</h2>
-            <p>N'hésitez pas à consulter mes projets ou à me contacter pour discuter de vos besoins en développement web.</p>
+            <p>N'hésitez pas à consulter mes projets ou à me contacter pour discuter de vos besoins en développement
+                web.</p>
             <a href="#projets" class="btn btn-outline-light btn-lg me-3">Voir mes projets</a>
             <a href="contact.html" class="btn btn-light btn-lg">Me contacter</a>
         </div>
     </section>
 
-<button id="scrollTopBtn">▲</button>
-    
-<!-- Footer -->
-<footer class="bg-black text-center py-3">
-  <p>© 2025 Kellyann K. Tous droits réservés.</p>
-</footer>
+    <button id="scrollTopBtn">▲</button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="bg-black text-center py-3">
+        <p>© 2025 Kellyann K. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
